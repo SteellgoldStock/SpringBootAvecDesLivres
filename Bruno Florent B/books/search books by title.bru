@@ -1,0 +1,15 @@
+meta {
+  name: Search books by title
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8080/books/search?title={{title}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  title: Harry
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Create book with new author
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:8080/books
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Les Misérables",
+    "isbn": 9782070409228,
+    "author": {
+      "name": "Victor Hugo",
+      "birthDate": "1802-02-26", 
+      "deathDate": "1885-05-22"
+    }
+  }
+}

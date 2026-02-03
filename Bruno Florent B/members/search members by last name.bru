@@ -1,0 +1,11 @@
+meta {
+  name: Search members by last name
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8080/members/search?lastName=Dupont
+  body: none
+  auth: none
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Delete member
+  type: http
+  seq: 6
+}
+
+delete {
+  url: http://localhost:8080/members/{{memberId}}
+  body: none
+  auth: none
+}

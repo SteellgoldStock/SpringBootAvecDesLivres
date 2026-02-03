@@ -1,0 +1,23 @@
+meta {
+  name: Create loan (borrow book)
+  type: http
+  seq: 9
+}
+
+post {
+  url: http://localhost:8080/loans
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "memberId": "{{memberId}}",
+    "bookId": "{{bookId}}"
+  }
+}
+
+vars:pre-request {
+  bookId: 2c9f8d8e-fbf8-4133-96c2-00f8e3a3b43c
+  memberId: 2a189b21-01c2-4795-aac8-f81e9a104260
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Return book
+  type: http
+  seq: 10
+}
+
+put {
+  url: http://localhost:8080/loans/{{loanId}}/return
+  body: none
+  auth: none
+}

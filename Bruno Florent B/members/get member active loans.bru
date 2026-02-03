@@ -1,0 +1,15 @@
+meta {
+  name: Get member active loans
+  type: http
+  seq: 8
+}
+
+get {
+  url: http://localhost:8080/members/{{memberId}}/loans/active
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  memberId: 7052caab-c921-4b13-b295-e33d1441bee5
+}

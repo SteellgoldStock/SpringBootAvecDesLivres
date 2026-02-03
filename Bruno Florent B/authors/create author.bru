@@ -1,0 +1,19 @@
+meta {
+  name: Create author
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/authors
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Victor Hugo",
+    "birthDate": "1802-02-26",
+    "deathDate": "1885-05-22"
+  }
+}

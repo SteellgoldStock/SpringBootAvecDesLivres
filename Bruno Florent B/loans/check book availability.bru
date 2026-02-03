@@ -1,0 +1,11 @@
+meta {
+  name: Check book availability
+  type: http
+  seq: 7
+}
+
+get {
+  url: http://localhost:8080/loans/book/{{bookId}}/availability
+  body: none
+  auth: none
+}

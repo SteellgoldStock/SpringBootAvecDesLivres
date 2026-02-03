@@ -1,0 +1,11 @@
+meta {
+  name: Get book loan history
+  type: http
+  seq: 11
+}
+
+get {
+  url: http://localhost:8080/books/{{bookId}}/loans
+  body: none
+  auth: none
+}
